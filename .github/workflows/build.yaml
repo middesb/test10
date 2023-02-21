@@ -19,9 +19,10 @@ jobs:
         # Disabling shallow clone is recommended for improving relevancy of reporting
         fetch-depth: 0
     - name: SonarQube Scan
-    uses: kitabisa/sonarqube-action@master
-    with:
-      host: ${{ secrets.SONAR_HOST }}
-      login: ${{ secrets.SONAR_KEY }}
-      projectBaseDir: "src/"
-      projectKey: "io.releaseio:riqpubsub"
+      uses: kitabisa/sonarqube-action@master
+      with:
+        host: ${{ secrets.SONAR_HOST }}
+        login: ${{ secrets.SONAR_KEY }}
+        projectBaseDir: "src/"
+        projectKey: "io.releaseio:riqpubsub"
+ 
